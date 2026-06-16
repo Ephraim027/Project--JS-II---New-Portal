@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Villa Carlina Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="villacarlinalogo">
+        <img src="images/resort-logo/logo.jpg">
+      </div>
+      
+      <button class="burger" id="burger">☰</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="RoomReservation.html">Room Reservation</a></li>
+        <li><a href="Restaurant.html">Restaurant Menu</a></li>
+        <li class="dropdown">
+          <button class="dropbtn" id="galleryBtn">Gallery</button>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="Resort.html">Resort</a>
+            <a href="Beach.html">Beach</a>
+            <a href="Tourist_Spot.html">Tourist Spot</a>
+          </div>
+        </li>  
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>        
+      </ul>
+    </nav>
+
+    <a href="RoomInfo8.html">
+      <img src="images/homepage-background/BackBtn.jpg" alt="back-btn" class="back-button">
+    </a>
+
+    <section class="BookRoomPage" id="BookRoom">
+        
+        <h1 class="BookRoom_title">Room Wisteria (6-8 Pax)</h1>
+
+        <div class="RoomDetails">
+
+            <img
+                src="images/Rooms-Image/wisteria.jpg"
+                alt="Wisteria Room"
+                class="RoomImage"
+            />
+
+            <div class="Amenities-text">
+
+                <ul class="RoomListAmenities">
+                    <li>Fully Air-Conditioned</li>
+                    <li>Cable TV</li>
+                    <li>Individual toilet and bath, 1 common C.R</li>
+                    <li>Restaurant</li>
+                </ul>
+
+                <!-- Buttons to increment and decrement the counter -->
+                <div class="controls">
+                  <button id="decreaseBtn">Decrease Day</button>
+                  <span id="quantity">1</span>
+                  <button id="increaseBtn">Increase Day</button>
+                </div>
+
+                <div class="total">
+                  Total: ₱<span id="total">3500.00</span>
+                </div>
+                <!-- Price offer list -->
+                <!-- <div id="price-container">
+                  <ul id="Price" style="display: none;">
+                    <li>PHP 2,000.00 (Peak Season)</li>
+                    <li>PHP 1,500.00 (Off Peak)</li>
+                  </ul>
+                </div> -->
+                <div class="BookRoombtn">
+                  <a href="Interest.html" class="interestbtn">Interest</a>      
+                  <button id="alertBookNowButton">
+                      Proceed to Payment
+                  </button>
+                </div>
+                <!-- alert message -->
+                <div id="confirmModal" class="modal">
+                  <div class="modal-content">
+                    <p>Are you sure you want to book now?</p>
+                    <div class="modal-buttons">
+                      <button id="confirmOk" class="ok-button">OK</button>
+                      <button id="confirmCancel" class="cancel-button">Cancel</button>
+                    </div>
+                  </div>
+                </div>  
+            </div>
+        </div>
+    </section>  
+
+    <section class="VillaCarlinaPageFooterImg" id="homepagefooter-img">
+      <img
+        src="images/homepage-background/VillaCarlinaFooter-img.jpeg"
+        alt="image-footer"
+        class="VillaCarlinaPageFooter-image"
+      />
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Villa Carlina Resort | &copy; 2026 All Rights Reserved(Ephraim B. Espiritu)</p>
+    </footer>
+    <script src="js/index-js/burgerscript.js"></script>
+    <script src="js/index-js/galleryBtnscript.js"></script>
+    <script src="js/BookRoom/IncrementAndDecrementBtn/IncrementAndDecrementScript.js"></script>
+    <script src="js/BookRoom/AlertScript/AlertsScriptRoomInfo8.js"></script>
+    <script src="js/BookRoom/HideAndShowBtn/HideAndShowButtonScript.js"></script>
+    <script src="js/Toast/toast.js"></script> 
+    <script src="js/BookRoom/BookRoom8.js"></script>
+  </body>
+</html>

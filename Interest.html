@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Villa Carlina Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="villacarlinalogo">
+        <img src="images/resort-logo/logo.jpg">
+      </div>
+      
+      <button class="burger" id="burger">☰</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="RoomReservation.html">Room Reservation</a></li>
+        <li><a href="Restaurant.html">Restaurant Menu</a></li>
+        <li class="dropdown">
+          <button class="dropbtn" id="galleryBtn">Gallery</button>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="Resort.html">Resort</a>
+            <a href="Beach.html">Beach</a>
+            <a href="Tourist_Spot.html">Tourist Spot</a>
+          </div>
+        </li>  
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>        
+      </ul>
+    </nav>
+
+    <a href="index.html">
+      <img src="images/homepage-background/BackBtn.jpg" alt="back-btn" class="back-button">
+    </a>
+    
+    <section class="MonthlyInterest">
+            <h2>MonthlyPayment</h2>
+
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" placeholder="e.g. 10000" />
+
+        <label for="years">Select Years:</label>
+        <select id="years">
+          <option value="1">1 Year</option>
+          <option value="2">2 Years</option>
+          <option value="3">3 Years</option>
+        </select>
+
+        <button id="calculateBtn">Calculate</button>
+        <a href="Interest.html" class="Monthlybtn">Monthly Interest</a>
+        <a href="AnnualInterest.html" class="Annualbtn">Annual Interest</a>
+
+        <div id="MonthlyInterestResult"></div>
+    </section>
+
+
+
+    <section class="VillaCarlinaPageFooterImg" id="homepagefooter-img">
+      <img
+        src="images/homepage-background/VillaCarlinaFooter-img.jpeg"
+        alt="image-footer"
+        class="VillaCarlinaPageFooter-image"
+      />
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Villa Carlina Resort | &copy; 2026 All Rights Reserved(Ephraim B. Espiritu)</p>
+    </footer>
+    <script src="js/index-js/burgerscript.js"></script>
+    <script src="js/index-js/galleryBtnscript.js"></script>
+    <script src="js/index-js/slides-scripts.js"></script>
+    <script src="js/Interest/MonthlyInterest.js"></script>
+  </body>
+</html>

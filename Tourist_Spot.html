@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Villa Carlina Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="villacarlinalogo">
+        <img src="images/resort-logo/logo.jpg">
+      </div>
+      
+      <button class="burger" id="burger">☰</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="RoomReservation.html">Room Reservation</a></li>
+        <li><a href="Restaurant.html">Restaurant Menu</a></li>
+        <li class="dropdown">
+          <button class="dropbtn" id="galleryBtn">Gallery</button>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="Resort.html">Resort</a>
+            <a href="Beach.html">Beach</a>
+            <a href="Tourist_Spot.html">Tourist Spot</a>
+          </div>
+        </li>  
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>        
+      </ul>
+    </nav>
+
+    <a href="index.html">
+      <img src="images/homepage-background/BackBtn.jpg" alt="back-btn" class="back-button">
+    </a>
+
+ <h1 class="gallerytourist_title">Tourist Spots</h1>
+    <div class="TouristSpot">
+
+        <div class="main-image-wrapper">
+          <span class="arrow left-arrow" onclick="prevImage()">&#9665;</span>
+          <img id="largeImage" class="large-image" src="images/Gallery/TouristSpot/IN_Logo/Ilocos_Norte_Im_In_Logo.jpg" alt="TouristSpotImage">
+          <span class="arrow right-arrow" onclick="nextImage()">&#9655;</span>
+        </div>
+        <div class="description">
+            <p>This is a simple image viewer.</p>
+        </div>
+        
+        <div class="image-gallery">
+            
+            <img class="small-image" src="images/Gallery/TouristSpot/IN_Logo/Ilocos_Norte_Im_In_Logo.jpg" onclick="changeImage('images/Gallery/TouristSpot/IN_Logo/Ilocos_Norte_Im_In_Logo.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Pagudpud/Saud_Beach.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Pagudpud/Saud_Beach.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Pagudpud/patapat_bridge.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Pagudpud/patapat_bridge.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Bangui/Windmills.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Bangui/Windmills.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Bangui/Kapurpurawan.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Bangui/Kapurpurawan.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Bangui/Sentinella_hill.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Bangui/Sentinella_hill.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Burgos/Light_House.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Burgos/Light_House.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Pasuquin/Biscocho.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Pasuquin/Biscocho.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Pasuquin/Spanish_Watch_Tower.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Pasuquin/Spanish_Watch_Tower.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/IN_Capitol.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/IN_Capitol.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/St.William_Cathedral.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/St.William_Cathedral.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/Sinking_Bell_Tower.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/Sinking_Bell_Tower.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/Laoag_Museum.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/Laoag_Museum.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/SM_Laoag.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/SM_Laoag.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/Fort_Ilocandia.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/Fort_Ilocandia.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/North/Laoag_City/Sand_Dunes.jpg" onclick="changeImage('images/Gallery/TouristSpot/North/Laoag_City/Sand_Dunes.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Sarrat/Sta._Monica_Parish_Church_and_Museum.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Sarrat/Sta._Monica_Parish_Church_and_Museum.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Sarrat/Marcos_Museum.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Sarrat/Marcos_Museum.jpg')">
+            <!-- <img class="small-image" src="images/Gallery/TouristSpot/South/Batac_City/Fedinand_E.Marcos_Presidential_Center.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Batac_City/Fedinand_E.Marcos_Presidential_Center.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Batac_City/Empanada.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Batac_City/Empanada.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Paoay/Saint_Augustine_Parish_Church.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Paoay/Saint_Augustine_Parish_Church.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Paoay/Chinese_Garden.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Paoay/Chinese_Garden.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Paoay/Paoay_Lake.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Paoay/Paoay_Lake.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Currimao/Pangil_Rock_Formation.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Currimao/Pangil_Rock_Formation.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Badoc/Minor_Basilica_and_Parish_of_Saint_John_the_Baptist.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Badoc/Minor_Basilica_and_Parish_of_Saint_John_the_Baptist.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Badoc/La_Virgen_Milagrosa.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Badoc/La_Virgen_Milagrosa.jpg')">
+            <img class="small-image" src="images/Gallery/TouristSpot/South/Badoc/Luna_Shrine_Museum.jpg" onclick="changeImage('images/Gallery/TouristSpot/South/Badoc/Luna_Shrine_Museum.jpg')"> -->
+                        
+        </div>
+
+    </div>
+
+
+    <section class="VillaCarlinaPageFooterImg" id="homepagefooter-img">
+      <img
+        src="images/homepage-background/VillaCarlinaFooter-img.jpeg"
+        alt="image-footer"
+        class="VillaCarlinaPageFooter-image"
+      />
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Villa Carlina Resort | &copy; 2026 All Rights Reserved(Ephraim B. Espiritu)</p>
+    </footer>
+    <script src="js/index-js/burgerscript.js"></script>
+    <script src="js/index-js/galleryBtnscript.js"></script>
+    <script src="js/index-js/slides-scripts.js"></script>
+    <script src="js/Gallery/Touristspot.js"></script>
+  </body>
+</html>

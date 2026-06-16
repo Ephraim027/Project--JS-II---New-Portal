@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Villa Carlina Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="villacarlinalogo">
+        <img src="images/resort-logo/logo.jpg">
+      </div>
+      
+      <button class="burger" id="burger">☰</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="RoomReservation.html">Room Reservation</a></li>
+        <li><a href="Restaurant.html">Restaurant Menu</a></li>
+        <li class="dropdown">
+          <button class="dropbtn" id="galleryBtn">Gallery</button>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="Resort.html">Resort</a>
+            <a href="Beach.html">Beach</a>
+            <a href="Tourist_Spot.html">Tourist Spot</a>
+          </div>
+        </li>  
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>        
+      </ul>
+    </nav>
+
+    <a href="RoomReservation.html">
+      <img src="images/homepage-background/BackBtn.jpg" alt="back-btn" class="back-button">
+    </a>
+
+    <section class="RoomInfo" id="RoomInfo">
+      <h2 class="section_title">Room Reservation</h2>
+      <div class="section_container">
+        <div class="RoomInfo_container">
+          <div class="RoomInfo_form">
+            <form id="reservation-form">
+              <div class="field">
+                <label for="Name">Full Name</label>
+                <input type="text" id="username" placeholder="Your Name" required />
+              </div>
+              <div class="field">
+                <label for="email">Your Email</label>
+                <input type="text" id="email" placeholder="Your Email" required />
+              </div>
+              <div class="field">
+                <label for="number">Contact Number</label>
+                <input
+                  type="number"
+                  id="number"
+                  placeholder="Your Contact Number"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="date">Check In</label>
+                <input
+                  type="date"
+                  id="checkin"
+                />
+              </div>
+              <div class="field">
+                <label for="date">Check Out</label>
+                <input
+                  type="date"
+                  id="checkout"
+                />
+              </div>
+              <div class="field">
+                <label for="textarea">Do you have any special request?</label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  placeholder="Your Request"
+                ></textarea>
+              </div>
+              <div class="RoomInfoButton">
+                <button type="submit" class="button" id="paymentButton">Checkout</button>
+                <div id="toast">This is a toast message</div>
+                <button id="resetButton">Reset</button>
+              </div>
+              <p id="greetingMessage"></p>
+              <div id="paragraphContainer"></div>
+            </form>
+          </div>
+          <div class="RoomInfo_text">
+            <div class="RoomInfo_items">
+              <!-- <i class="bx bx-current-location"></i> -->
+              <a href="https://www.facebook.com/VillaCarlinaResort16"target="_blank"><img src="images/contactus-icons/icons8-facebook.svg"></a>
+              <div class="RoomInfo_details">
+                <h3>Resort Name</h3>
+                <p>Villa Calina Resort</p>
+              </div>
+            </div>
+            <div class="RoomInfo_items">
+              <!-- <i class="bx bxs-envelope"></i> -->
+            <a href="https://www.google.com/maps/place/Villa+Carlina+Resort/@18.591263,120.786822,15z/data=!4m2!3m1!1s0x0:0xf26a0894538be96d?sa=X&ved=1t:2428&ictx=111"target="_blank"><img src="images/contactus-icons/location-svgrepo-com.svg"></a>
+              <div class="contact_details">
+                <h3>Address</h3>
+                <p>Barangay Saud, Pagudpud, Ilocos Norte</p>
+              </div>
+            </div>
+            <div class="RoomInfo_items">
+              <img src="images/contactus-icons/contact-book-svgrepo-com.svg">
+              <div class="contact_details">
+                <h3>Call Us for Reservation</h3>
+                <p>09666715263</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="VillaCarlinaPageFooterImg" id="homepagefooter-img">
+      <img
+        src="images/homepage-background/VillaCarlinaFooter-img.jpeg"
+        alt="image-footer"
+        class="VillaCarlinaPageFooter-image"
+      />
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Villa Carlina Resort | &copy; 2026 All Rights Reserved</p>
+    </footer>
+    <script src="js/index-js/burgerscript.js"></script>
+    <script src="js/index-js/galleryBtnscript.js"></script>
+    <script src="js/RoomInfo/DomManipulationButtonScript.js"></script>
+    <script src="js/RoomInfo/RoomInfo5.js"></script>
+    <script src="js/RoomInfo/ResetButtonScript.js"></script>
+  </body>
+</html>

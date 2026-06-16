@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Villa Carlina Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="villacarlinalogo">
+        <img src="images/resort-logo/logo.jpg">
+      </div>
+      
+      <button class="burger" id="burger">☰</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="RoomReservation.html">Room Reservation</a></li>
+        <li><a href="Restaurant.html">Restaurant Menu</a></li>
+        <li class="dropdown">
+          <button class="dropbtn" id="galleryBtn">Gallery</button>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="Resort.html">Resort</a>
+            <a href="Beach.html">Beach</a>
+            <a href="Tourist_Spot.html">Tourist Spot</a>
+          </div>
+        </li>  
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>        
+      </ul>
+    </nav>
+
+    <a href="index.html">
+      <img src="images/homepage-background/BackBtn.jpg" alt="back-btn" class="back-button">
+    </a>
+    
+<h1 class="gallerybeach_title">Villa Carlina Resort Beach Gallery</h1>
+
+    <div class="beachgallery">
+
+            <img src="images/Gallery/Beach/beach_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach_with_flying_kyt.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach1_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach2_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach3_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach4_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach5_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach6_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach7_gallery.jpg" data-caption="Saud Beach">
+            <img src="images/Gallery/Beach/beach8_gallery.jpg" data-caption="Saud Beach">
+
+        </div>
+        
+        <!-- Popup container -->
+        <div class="beach_popup" id="beach_popup">
+          <span class="beachclose-btn" id="beachclose-btn">&times;</span>
+          <img id="popup-img">
+          <p class="beachcaption" id="beachpopup-caption"></p>
+        </div>
+    </div>
+
+
+
+    <section class="VillaCarlinaPageFooterImg" id="homepagefooter-img">
+      <img
+        src="images/homepage-background/VillaCarlinaFooter-img.jpeg"
+        alt="image-footer"
+        class="VillaCarlinaPageFooter-image"
+      />
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Villa Carlina Resort | &copy; 2026 All Rights Reserved(Ephraim B. Espiritu)</p>
+    </footer>
+    <script src="js/index-js/burgerscript.js"></script>
+    <script src="js/index-js/galleryBtnscript.js"></script>
+    <script src="js/Gallery/beachgallery.js"></script>
+  </body>
+</html>
